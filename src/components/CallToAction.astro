@@ -1,15 +1,39 @@
 ---
-import Container from "./Container.astro"
+import Container from "../components/Container.astro";
 ---
 
-<section id="cta" class="bg-primary py-16 text-white">
-  <Container>
-    <div class="text-center">
-      <h2 class="text-3xl font-bold">Empieza tu viaje hacia una mejor salud</h2>
-      <p class="mt-4 text-lg">Con nuestros suplementos de alta calidad, puedes alcanzar tus objetivos de salud y bienestar. ¡Únete a Nutrition Valeza GDL hoy!</p>
-      <a href="/productos" class="mt-6 inline-block bg-white text-primary font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-gray-100">
-        Ver Productos
-      </a>
+<Container>
+  <h1 class="text-3xl font-bold text-center text-gray-800 dark:text-white">Nuestros Productos</h1>
+  <div class="grid gap-8 mt-8 md:grid-cols-2 lg:grid-cols-3">
+    <!-- Producto 1 -->
+    <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+      <img src="/images/Hydrotein Fresas con crema 2 S-E.png" alt="Hydrotein Fresas con Crema" class="h-64 w-full object-cover rounded-xl" />
+      <h2 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">Hydrotein Fresas con Crema</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">Proteína de suero de leche hidrolizada sabor fresas con crema.</p>
     </div>
-  </Container>
-</section>
+    <!-- Producto 2 -->
+    <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+      <img src="/images/Hydrotein Vainilla Canela 2 S-E.png" alt="Hydrotein Vainilla Canela" class="h-64 w-full object-cover rounded-xl" />
+      <h2 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">Hydrotein Vainilla Canela</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">Proteína de suero de leche hidrolizada sabor vainilla y canela.</p>
+    </div>
+    <!-- Producto 3 -->
+    <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+      <img src="/images/Hydrotein Chocolate Avellana 1.png" alt="Hydrotein Chocolate Avellana" class="h-64 w-full object-cover rounded-xl" />
+      <h2 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">Hydrotein Chocolate Avellana</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">Proteína de suero de leche hidrolizada sabor chocolate y avellana.</p>
+    </div>
+    <!-- Producto 4 -->
+    <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+      <img src="/images/Hydrotein Vainilla Cafe 1.png" alt="Hydrotein Vainilla Café" class="h-64 w-full object-cover rounded-xl" />
+      <h2 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">Hydrotein Vainilla Café</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">Proteína de suero de leche hidrolizada sabor vainilla y café.</p>
+    </div>
+    <!-- Producto 5 -->
+    <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+      <img src="/images/Coffee Fit 2.png" alt="Coffee Fit" class="h-64 w-full object-cover rounded-xl" />
+      <h2 class="mt-4 text-xl font-semibold text-gray-800 dark:text-white">Coffee Fit</h2>
+      <p class="mt-2 text-gray-600 dark:text-gray-300">Suplemento alimenticio a base de café, L-carnitina, cafeína y otros ingredientes naturales.</p>
+    </div>
+  </div>
+</Container>
